@@ -65,6 +65,15 @@ x = [1, 2, 3, 4, 5]
 out1 = []
 out1 = [num**2 for num in x]
 
+lam1 = lambda var1 : var1 ** 2
+
+samp1 = [1,2,3,4,5,6,7,8,9]
+test1 = list(filter(lambda var1 : var1 % 2 == 0, samp1))
+#print('test1 {}'.format(test1))
+
+test2 = list(map(lambda var1 : var1 ** 2, samp1))
+#print('test2 {}'.format(test2))
+
 class Person:
     def __init__(self, name, school, age):
         # data types - String, Numbers, List, Tuple, Dictionary
