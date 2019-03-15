@@ -14,6 +14,15 @@ num1 = 1    # integer
 num2 = 2.0  # float
 bool1 = True
 bool2 = False
+# STRING METHODS
+str3 = "i am hendry"
+# print(str3.upper())
+str4 = "I AM PLUTO"
+# print(str4.lower())
+# print(str4.split())
+str5 = "soccer,table tennis, badminton"
+# print(str5.split(","))
+
 # OPERATIONS
 op1 = 2 + 5
 op2 = 6 - 3
@@ -27,10 +36,16 @@ op7 = (5 + 2) * 3
 list1 = ['apple', 'banana', 'watermelon']
 list1.append('papaya')
 list1_item = list1[1]
+list1.pop()
+list1.pop(0)
+print(list1)
 # TUPLE
 # Tuples are immutable
 tup1 = ("dog", "cat", "horse")
 tup1_item = tup1[2]
+# Tuple unpacking
+(item1, item2, item3) = tup1
+print(item1)
 # DICTIONARY
 dict1 = { 'name': "Johnny", "age": 22}
 dict1_item = dict1['age']
@@ -74,6 +89,7 @@ test1 = list(filter(lambda var1 : var1 % 2 == 0, samp1))
 test2 = list(map(lambda var1 : var1 ** 2, samp1))
 #print('test2 {}'.format(test2))
 
+# CLASS
 class Person:
     def __init__(self, name, school, age):
         # data types - String, Numbers, List, Tuple, Dictionary
