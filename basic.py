@@ -89,6 +89,10 @@ test1 = list(filter(lambda var1 : var1 % 2 == 0, samp1))
 test2 = list(map(lambda var1 : var1 ** 2, samp1))
 #print('test2 {}'.format(test2))
 
+# LIST COMPREHENSION
+z1 = [1,2,3,4,5,6]
+z2 = [x ** 2 for x in z1]   # 1,4,9,16,25,36
+
 # CLASS
 class Person:
     def __init__(self, name, school, age):
